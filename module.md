@@ -1,0 +1,23 @@
+# Файловая структура модулей
+
+Исходный код делится на общий и модульный.
+
+В директории `Shared` распологаются базовые классы, трэйты и т.д.
+Вобщем все то, что может быть использовано любым модулем.
+
+В директории `Module` логика разделяется по разным модулям, которые решают ограниченный круг задач.
+
+    src/
+        Module/
+            SubModule/
+                Application/
+                Domain/
+                Infrastructure/
+                Presentation/
+            SubModule2/
+            SubModule3/
+        Shared/
+            Application/
+            Domain/
+            Infrastructure/
+            Presentation/
